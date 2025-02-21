@@ -1,1 +1,1 @@
-# memo-TKinter
+tkinter さわってみたかっただけ
