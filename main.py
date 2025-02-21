@@ -3,11 +3,12 @@ import tkinter as tk
 from tkinter import messagebox
 
 root = tk.Tk()
-root.title(u"memo")
-root.geometry("400x300")
+root.title(u"ToDo list")
+root.geometry("200x300")
 
 frame = tk.Frame(root)
 frame.grid(row=2, column=0, columnspan=2, sticky="w")
+
 
 txtBox = tk.Entry()
 txtBox.grid(row=0, column=0, padx=5, pady=5)
@@ -51,8 +52,5 @@ Dbtn = tk.Button(text = u'選択した要素を削除')
 Dbtn.bind("<Button-1>", DeleteItem)
 Dbtn.grid(row=1, column=0, padx=5, pady=5)
 
-
-bar_y = tk.Scrollbar(frame, orient=tk.VERTICAL)
-bar_y.pack(side=tk.RIGHT, fill=tk.Y)
 
 root.mainloop()
